@@ -918,11 +918,25 @@ oot@centos7 mygit]# rm passwd    删除文件
 23 "显示当前位置
 24 set ruler
 
-github文件下载
+=====   github文件下载  插件安装  ========
 bundle文件夹下：git clone http：链接文件
 打开一个vim
 输入PluginInstall 安装插件
 查看下载文件的REDME.md  按说明在.vimrc中添加设置 
+
+======    gitbash使用  ==========
+在windows中下载 gitbash 软件
+在C盘中创建MyGit文件夹，作为本地仓库
+在MyGit文件夹下，输入git init   初始化仓库
+git remote add origin https://github仓库链接       与远程仓库建立链接
+git remote -v           查看是否成功连接
+git pull origin master    下载文件到本地仓库
+修改文件
+git status                查看文件是否被修改过（红色为修改过）
+git commit -am “已修改”      提交并注释
+git log                      查看所有版本号
+git push origin master       推送到github仓库
+
 
 
 
